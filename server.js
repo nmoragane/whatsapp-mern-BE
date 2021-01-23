@@ -19,6 +19,12 @@ const pusher = new Pusher({
 //middleware
 app.use(express.json())
 
+app.use((req,res) => {
+    res.setHeader("Access-Control-Allow-Origin", '*');
+    res.setHeader("Access-Control-Allow-Headers", '*');
+    next();
+})
+
 //DB config
 const password = "M6v7D7LVhr5KvSOE";
 const dbname = "whatsappDb";

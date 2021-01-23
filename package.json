@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/nmoragane/whatsapp-mern-BE#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.11.12",
     "pusher": "^4.0.2"
